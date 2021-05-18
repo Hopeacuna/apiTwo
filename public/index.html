@@ -4,21 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./api2.css" rel="stylesheet">
     <title>Api project 2</title>
 </head>
 <body>
 
+    <div class="wrapper">
+<div class="heading">
 <h1>ENTER YOUR HEROS</h1>
+<h3>Select any number between 1 and up to 731 to generate your two fighters!</h3>
+</div>
+
+<div class="middleArea">
+
+<div class="selectionArea">
 
 <form id="choiceSelection">
-<p><label>FIRST CHOICE<input id="choiceOne" type="number" required></label></p>
+<p><label>FIRST CHOICE:<input id="choiceOne" type="number" required></label></p>
 </br>
-<p><label>SECOND CHOICE<input id="choiceTwo" type="number" required></label></p>
+<p><label>SECOND CHOICE:<input id="choiceTwo" type="number" required></label></p>
 </form>
 
-<button type="submit" form="choiceSelection" value="Submit" onclick="heroSelections();return false">Submit</button>
+<button id="submitButton" type="submit" form="choiceSelection" value="Submit" onclick="fetchItems();return false">Fight!</button>
+
+</div>
+
+<div class="heroImgOne"> 
+    <img id="imgOne" src="./assets/silhouette.png" alt="silhouette">
+    <p id="nameDisplayOne">Selection one</p>
+</div>
+
+<h1 id="vs">VS</h1>
+
+<div class="heroImgTwo">
+    <img id="imgTwo" src="./assets/silhouette.png" alt="silhouette">
+    <p id="nameDisplayTwo">Selection two</p>
+</div>
+
+</div>
 
 
+<div class="championDisplay">
+
+<h1 id="championTitle">OUR CHAMPION!</h1>
+
+<div class="resultsDisplay">
+
+</div>
+<div class="winningImage"></div>
+
+</div>
+
+</div>
 
 <script src="/__/firebase/8.6.1/firebase-app.js"></script>
 <script src="/__/firebase/8.6.1/firebase-analytics.js"></script>

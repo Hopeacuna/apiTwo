@@ -1,0 +1,90 @@
+.wrapper {
+    background-image: url("./assets/rocky-wall.png");
+    background-color: rgb(228, 202, 119);
+    background-size: cover;
+    height: 1100px;
+}
+
+.heading {
+    text-align: center;
+    color: black;
+    padding: 25px;
+}
+
+.middleArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selectionArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    padding: 30px;
+    margin: 50px;
+    background-color: rgba(255, 0, 0, 0.404);
+    border: solid 2px red;
+
+}
+#choiceOne {
+position: relative;
+margin: 50px;
+
+}
+
+#choiceTwo {
+    margin: 50px;
+}
+
+#submitButton {
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+
+#vs {
+    display: flex;
+    align-items: center;
+}
+
+.heroImgOne {
+    margin: 25px;
+}
+#nameDisplayOne {
+    text-align: center;
+    font-size: 25px;
+}
+
+.heroImgTwo {
+    margin: 25px;
+}
+#imgOne {
+    height: 350px;
+}
+#imgTwo {
+    height: 350px;
+}
+#nameDisplayTwo {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.championDisplay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(199, 37, 23);
+}
+#championTitle {
+    font-size: 50px;
+}
+.resultsDisplay {
+    font-size: 100px;
+    position: relative;
+    bottom: 80px;
+    border: red;
+}
+
